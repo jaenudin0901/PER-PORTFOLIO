@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navigation">
+        <div class="banner">
+            <img src="girl.jpg" class="cover">
+        </div>
+        <div class="navlink">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <section class="sec">
+        <header>
+            <div class="toggle"></div>
+            <a href="" class="btn">Hire Me</a>
+        </header>
+
+        <div class="imgBx">
+            <img src="girl.jpg" class="cover">
+        </div>
+
+        <div class="content">
+            <h2>Hi, I am <br><span>Jaenudin</span></h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem iure laborum debitis tempora corrupti, vel tempore provident ipsam quis eius et sit asperiores ut pariatur maiores. Eveniet sunt incidunt quis!</p>
+            <a href="#" class="btn">Download My Cv</a>
+        </div>
+
+        <footer>
+            <ul class="sci">
+                <li><a href=""><img src="img/facebook.png" ></a></li>
+                <li><a href=""><img src="img/twitter.png" ></a></li>
+                <li><a href=""><img src="img/instagram.png" ></a></li>
+            </ul>
+            <p class="copyrightText">@2021 Pandai Ngoding</p>
+        </footer>
+    </section>
+
+
+    <script>
+        let menuToggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let sec = document.querySelector('.sec');
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            sec.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
